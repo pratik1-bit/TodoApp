@@ -136,6 +136,6 @@ app.get("/work",function(req,res){
     res.render("list",{listType:"Work List", newlistItems: workItems});
 });
 
-app.listen(3000,function(){
+app.listen(process.env.PORT,function(){
     console.log("Server listening on port 3000");
 });
